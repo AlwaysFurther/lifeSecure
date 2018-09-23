@@ -6,7 +6,8 @@ We created five key pairs and created one account for each of them
 
 Each account deploys our EOS smart contract
 
-For convenience for the Hackathon we hardecoded the following informations in our front end code
+For convenience for the Hackathon we hardecoded the following informations in our front end code but we
+wouldn't normally do this.
 
 ```
 const accounts = [
@@ -18,3 +19,14 @@ const accounts = [
 ];
 
 ```
+
+In order to run our demo you need to have a wallet named default with all the private keys above.
+You also need to create these five accounts and deploy our contract to them. 
+
+# front end
+
+a set of js functions making use of the eosjs API is merged with the React code in order to make the UI talk to the contract
+
+Data encryption is made with the help of the ecc modules of eosjs
+
+
